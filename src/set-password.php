@@ -10,3 +10,4 @@
     $bd = null;
     header('Location: login.php');
   } 
+  

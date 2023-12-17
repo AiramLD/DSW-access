@@ -26,6 +26,7 @@ if(isset($_POST['name'],$_POST['password'],$_POST['email'])) {
       ':mail' => $email,
       ':number_validate' => $number_validate
     ]);
+    
     require_once 'email.php';
     $message = "<h1>Registro de usuarios</h1><h2>Hola $name</h2><p><a href=\"http://localhost/DSW2023-access/validate.php?username=$name&number_validate=$number_validate\">pincha aquí para validarte</a>";
     sendMail($email,"Validación de usuario",$message);
