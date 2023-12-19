@@ -1,4 +1,6 @@
--- Active: 1700668305200@@127.0.0.1@3306@access
+-- Active: 1700591600066@@localhost@3306@access
+
+use access;
 CREATE TABLE users(  
     id int NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'Primary Key',
     name VARCHAR(255) NOT NULL UNIQUE,
@@ -7,3 +9,4 @@ CREATE TABLE users(
     validate BOOLEAN DEFAULT false,
     number_validate int
 ) COMMENT '';
+                                                                                                                                                +

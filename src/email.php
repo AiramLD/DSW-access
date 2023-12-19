@@ -2,7 +2,6 @@
 require_once 'vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
-
 function sendMail($to, $subject, $message) {
   require_once 'data.php';
   $mail = new PHPMailer();
@@ -13,7 +12,7 @@ function sendMail($to, $subject, $message) {
   $mail->Password = $pw;
   $mail->Port = 465;
   $mail->SMTPSecure = "ssl";
-  $mail->setFrom($user, 'Andrés Profe');
+  $mail->setFrom($user, 'Airam Luis');
   
   // El mensaje del correo
   $mail->addAddress($to);
